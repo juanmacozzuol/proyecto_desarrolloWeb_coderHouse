@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="mycss/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=MonteCarlo&display=swap" rel="stylesheet">
+
+    </head>
+    <body class="colorFondo">
+        <header class="fondoHeader container-fluid">
+            <!---la idea es que contenga el icono, y un menu desplegable-->
+                     
+            <a href="index.html">
+              <img class="rounded-circle header__logo"  src="imagenes/caja-de-regalo.png"  alt="Logo de la pagina">
+            </a>
+        
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="header__links" aria-current="page" href="loMasDeseado.html">Lo mas deseado</a>
+              </li>
+              <li class="nav-item dropdown links">
+                <a class="header__links dropdown-toggle header__links--actual " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mi Wishlist</a>
+                <ul class="dropdown-menu fondomenu">
+                  <li><a class="dropdown-item" href="./perfil.html">Perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Agregar Wish</a></li>
+                  <li><a class="dropdown-item" href="#">Eliminar Wish</a></li>
+                </ul>
+              </li>
+              <li class="nav-item links">
+                <a class="header__links"  href="sobreNosotros.html">Sobre Nosotros</a>
+              </li>
+                <li class="nav-item links">
+                 <a class="header__links" href="contacto.html" target="_blank">Contacto</a>
+                </li>
+      
+            </ul>
+              
+        </header>
+
+        <section class="container-fluid "> 
+
+            <div class="row align-items-center justify-content-center">
+                <div class="borde col-md-3 align-items-center justify-content-center ">
+                    <img src="./imagenes/Juanma.png" class="perfil__imagen rounded-circle" alt="">
+                    <h5 class="">Juan Manuel Fernandez</h5>
+                    <h5>DNI: 56.854.486</h5>
+                    <h5>Mail: dsfvsav@sdgs.com</h5>
+                    <h5>Tel: 15-4548-4151</h5>
+                </div>
+                <div class="borde  col-md-2 ">
+
+                    <div class="col espacio  ">
+                        <input type="button" value="Agregar Amigo">
+                    </div>
+                    <div class="col espacio ">
+                        <input type="button" value="Eliminar Amigo">
+                    </div>
+                    <div class="col espacio ">
+                        <input  type="button" value="Cambiar Contraseña">
+                    </div>
+                </div>
+            </div>  
+
+        </section>
+
+        <footer class="colorFoot container-fluid">
+            <nav>
+              
+              <a  href="https://api.whatsapp.com/send?phone=+34662681XXX"> <img class="whatsapp" height= 30px width= 50px src="imagenes/WhatsApp-logo.png" alt=""></a>
+            </nav>
+          </footer>
+          <script src="js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>

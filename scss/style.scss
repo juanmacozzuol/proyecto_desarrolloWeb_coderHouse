@@ -1,0 +1,201 @@
+@import "./header.scss";
+@import "./footer.scss";
+@import "./sobreNosotros.scss";
+
+
+*{
+
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*clase para el body, de momento solo define el color de fondo*/
+.colorFondo
+{
+    background-color:#F69E7B;
+}
+
+
+
+
+/*un poco de estilo para las letras en general*/
+.parrafo
+{
+    font-size: 25px;
+    font-style: italic;
+    color:black;
+}
+/*texto sobre nosotros*/
+
+/*H1 del index*/
+.titulo
+{
+    grid-area:titulo;
+    font-size: 70px;
+    font-family: 'MonteCarlo', cursive;
+    color:#30475E;
+    text-align: center;
+
+}
+/*h2 del index, probando fuentes*/
+.formulario__titulo
+{
+
+    font-size: 20px;
+    color:#30475E;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+
+
+
+
+
+
+
+.links
+{
+    text-decoration: none;
+    color:black;
+    margin-left: 5px;
+   
+}
+
+
+
+
+
+
+ 
+.formulario
+{grid-area:login;
+    display: flex;
+    flex-direction: column;
+    width: 300px;  
+    border:5px solid #30475E;
+    padding:0px 10px 10px 10px;
+    margin: 10px;
+    justify-content:space-evenly;
+}
+
+
+
+
+
+
+
+.grilla {
+    display: grid;
+    grid-template-areas:
+     "header header header"
+   "titulo titulo titulo"
+   "login fotos vacio"
+   "opiniones opiniones opiniones"
+   "footer footer footer";
+    grid-template-rows: 80px 200px 400px auto 75px;
+    grid-template-columns: 30% 60% auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px; 
+}
+
+
+
+.carousel
+{
+    grid-area:fotos;
+}
+
+.opiniones
+{
+    grid-area:opiniones;
+}
+
+.tarjeta{
+    background-color:#DEB166;
+}
+
+.perfil__imagen{
+    height:150px; 
+     width:112px;
+     margin:10px;
+}
+
+ .borde{
+
+    border:black 10px solid;
+    margin:10px;
+    padding:10px;
+    
+}
+
+.espacio{
+
+    padding:5px;
+}
+
+
+
+@media (max-width:576px)
+{
+  .grilla
+  {
+  
+      display: grid;
+      grid-template-areas:
+      "header"
+      "titulo"
+      "login" 
+      "fotos"
+      "opiniones"
+     "footer ";
+  
+     grid-template-columns: 2fr ;
+     
+  
+     grid-row-gap: 50px;
+    
+  
+  }
+  
+  .titulo
+  {
+      grid-area:titulo;
+      font-size: 50px;
+      font-family: 'MonteCarlo', cursive;
+      color:#30475E;
+      text-align: center;
+
+  
+  }
+}
+  
+  
+@media (max-width:961px)
+{
+  .grilla
+  {
+  
+      display: grid;
+      grid-template-areas:
+      "header "
+      "titulo titulo"
+      "login fotos" 
+      
+      "opiniones"
+     "footer ";
+  
+     grid-template-columns: 1fr 1fr ;
+     grid-row-gap: 20px;
+  }
+  
+  .titulo
+  {
+      grid-area:titulo;
+      font-size: 50px;
+      font-family: 'MonteCarlo', cursive;
+      color:#30475E;
+      text-align: center; 
+  }
+}
+  

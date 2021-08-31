@@ -1,0 +1,13 @@
+/*clase para el footer, de momento solo define el color de fondo y padding*/
+.colorFoot
+{   grid-area:footer;
+  background-color: #30475E;
+    padding:2px;
+}
+
+
+
+.whatsapp:hover{
+    transform:scale(2,2);
+    transition:all 1s;
+}

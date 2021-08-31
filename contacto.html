@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="mycss/style.css">
+  </head>
+
+
+  <body class="colorFondo">
+    <header class="fondoHeader container-fluid">
+      <!---la idea es que contenga el icono, y un menu desplegable-->
+                 
+      <a href="index.html">
+          <img class="rounded-circle header__logo"  src="imagenes/caja-de-regalo.png"  alt="Logo de la pagina">
+      </a>
+    
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="header__links" aria-current="page" href="loMasDeseado.html">Lo mas deseado</a>
+        </li>
+        <li class="nav-item dropdown links">
+          <a class="header__links dropdown-toggle " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mi Wishlist</a>
+            <ul class="dropdown-menu fondomenu">
+              <li><a class="dropdown-item" href="./perfil.html">Perfil</a></li>
+              <li><a class="dropdown-item" href="#">Agregar Wish</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar Wish</a></li>
+            </ul>
+        </li>
+        <li class="nav-item links">
+          <a class="header__links"  href="sobreNosotros.html">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item links">
+          <a class="header__links header__links--actual" href="contacto.html" target="_blank">Contacto</a>
+         </li>
+  
+      </ul>
+          
+    </header>
+
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!---Formulario de contacto-->
+        <section class="col-md-3 offset-md-2">
+                
+          <form action="contacto.html" class="formulario">
+            <p class="formulario__titulo">Motivo</p>
+            <select name="motivo" id="">
+            <option value="">seleccione una opcion</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="problema">Problema</option>
+                          
+            </select>
+            <label for="mail">Email</label>
+            <input type="email" name="mail"> 
+            <p class="formulario__titulo">Sos:</p>
+            <label><input type="checkbox" name="sos" value="correr">Wisher</label>
+            <label><input type="checkbox" name="sos" value="caminar">Tienda Amiga</label>                  
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="formularioContacto__botones">
+              <input type="reset" value="Limpiar formulario"/>
+              <input type="submit" value="Enviar formulario"/>
+            </div>
+          </form>
+        </section>
+        <!--FAQ-->
+
+        <section class="col-md-4 offset-md-2 "> 
+          <div class="accordion accordion-flush ">
+                  
+            <p class="accordion-header colorFondo"  >
+              <button class="accordion-button colorFondo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Cómo agrego un item a mi wishlist?
+              </button>
+            </p>
+            <p class="accordion-item colorFondo collapse" id="collapseOne" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="accordion-header colorFondo"  >
+              <button class="accordion-button colorFondo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                ¿Cómo elimino un item de mi wishlist?
+              </button>
+            </p>
+            <p class="accordion-item colorFondo collapse" id="collapseTwo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="accordion-header colorFondo"  >
+              <button class="accordion-button colorFondo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                ¿Cómo agrego un amigo?
+              </button>
+            </p>
+            <p class="accordion-item colorFondo collapse" id="collapseThree">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="accordion-header colorFondo"  >
+              <button class="accordion-button colorFondo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                ¿Cómo hago un regalo grupal?
+              </button>
+            </p>
+            <p class="accordion-item colorFondo collapse" id="collapseFour">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+
+          </div>
+
+        </section>
+      </div>
+    </div>
+        
+    <footer class="colorFoot container-fluid">
+      <nav>
+
+        <a  href="https://api.whatsapp.com/send?phone=+34662681XXX"> <img class="whatsapp" height= 30px width= 50px src="imagenes/WhatsApp-logo.png" alt=""></a>
+      </nav>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrate</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="mycss/style.css">
+    </head>
+    <body class="colorFondo">
+      <header class="fondoHeader container-fluid">
+        <!---la idea es que contenga el icono, y un menu desplegable-->
+                 
+        <a href="index.html">
+          <img class="rounded-circle header__logo"  src="imagenes/caja-de-regalo.png"  alt="Logo de la pagina">
+        </a>
+    
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="header__links" aria-current="page" href="loMasDeseado.html">Lo mas deseado</a>
+          </li>
+          <li class="nav-item dropdown links">
+            <a class="header__links dropdown-toggle " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mi Wishlist</a>
+            <ul class="dropdown-menu fondomenu">
+              <li><a class="dropdown-item" href="./perfil.html">Perfil</a></li>
+              <li><a class="dropdown-item" href="#">Agregar Wish</a></li>
+              <li><a class="dropdown-item" href="#">Eliminar Wish</a></li>
+            </ul>
+          </li>
+          <li class="nav-item links">
+            <a class="header__links"  href="sobreNosotros.html">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item links">
+            <a class="header__links" href="contacto.html" target="_blank">Contacto</a>
+           </li>
+  
+        </ul>
+          
+      </header>
+
+      <h1 class="titulo">Registrate</h1> 
+      <form action="">  
+           
+        <input type="text" name="nombre" placeholder="Nombre" >
+        <input type="text" name="apellido" placeholder="Apellido" >
+        <input type="email" name="mail" placeholder="Mail" >
+        <input type="password" name="pass" placeholder="Contraseña" >
+      </form> 
+
+
+
+      <footer class="colorFoot container-fluid">
+        <nav>
+
+          <a  href="https://api.whatsapp.com/send?phone=+34662681XXX"> <img class="whatsapp" height= 30px width= 50px src="imagenes/WhatsApp-logo.png" alt=""></a>
+        </nav>
+      </footer>
+      <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
