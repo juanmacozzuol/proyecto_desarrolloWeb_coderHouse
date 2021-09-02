@@ -133,9 +133,8 @@
 @media (max-width: 576px) {
   .grilla {
     display: grid;
-    grid-template-areas: "header" "titulo" "login"  "fotos" "opiniones" "footer ";
-    grid-template-columns: 2fr;
-    grid-row-gap: 50px; }
+    grid-template-areas: "header header" "titulo titulo" "login login"  "fotos fotos" "opiniones opiniones" "footer footer";
+    grid-template-rows: 1fr 1fr; }
   .titulo {
     grid-area: titulo;
     font-size: 50px;

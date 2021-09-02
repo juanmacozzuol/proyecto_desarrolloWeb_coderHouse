@@ -143,17 +143,17 @@
   
       display: grid;
       grid-template-areas:
-      "header"
-      "titulo"
-      "login" 
-      "fotos"
-      "opiniones"
-     "footer ";
+      "header header"
+      "titulo titulo"
+      "login login" 
+      "fotos fotos"
+      "opiniones opiniones"
+     "footer footer";
   
-     grid-template-columns: 2fr ;
-     
+    
+     grid-template-rows: 1fr 1fr ;
   
-     grid-row-gap: 50px;
+    
     
   
   }
