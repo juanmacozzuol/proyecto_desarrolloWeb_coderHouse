@@ -1,16 +1,14 @@
 .header__logo
 {
+    height:70px;
+    width:70px;
     
-    height:50px;
-    width:50px;
-
 }
 /*clase para el header, de momento solo define el color de fondo*/
 .fondoHeader
 {
     grid-area:header;
 
-    height: 80px;
     background-image: linear-gradient(to left,#FF5F6D,#FFC371);
 }
 
