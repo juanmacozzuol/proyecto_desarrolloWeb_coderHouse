@@ -1,6 +1,7 @@
 @import "./header.scss";
 @import "./footer.scss";
 @import "./sobreNosotros.scss";
+@import "./query.scss";
 
 
 *{
@@ -95,8 +96,8 @@
    "footer footer footer";
     grid-template-rows: 100px 200px 400px auto 75px;
     grid-template-columns: 30% 60% auto;
-    grid-row-gap: 20px;
-    grid-column-gap: 10px; 
+    row-gap: 20px;
+    column-gap: 10px; 
 }
 
 
@@ -104,6 +105,7 @@
 .carousel
 {
     grid-area:fotos;
+    margin:10px;
 }
 
 .opiniones
@@ -135,67 +137,3 @@
 }
 
 
-
-@media (max-width:576px)
-{
-  .grilla
-  {
-  
-      display: grid;
-      grid-template-areas:
-      "header header"
-      "titulo titulo"
-      "login login" 
-      "fotos fotos"
-      "opiniones opiniones"
-     "footer footer";
-  
-    
-     grid-template-rows: 1fr 1fr ;
-  
-    
-    
-  
-  }
-  
-  .titulo
-  {
-      grid-area:titulo;
-      font-size: 50px;
-      font-family: 'MonteCarlo', cursive;
-      color:#30475E;
-      text-align: center;
-
-  
-  }
-}
-  
-  
-@media (max-width:961px)
-{
-  .grilla
-  {
-  
-      display: grid;
-      grid-template-areas:
-      "header "
-      "titulo titulo"
-      "login fotos" 
-      
-      "opiniones"
-     "footer ";
-  
-     grid-template-columns: 1fr 1fr ;
-     grid-row-gap: 20px;
-  }
-  
-  .titulo
-  {
-      grid-area:titulo;
-      font-size: 50px;
-      font-family: 'MonteCarlo', cursive;
-      color:#30475E;
-      text-align: center; 
-  }
-}
-  
