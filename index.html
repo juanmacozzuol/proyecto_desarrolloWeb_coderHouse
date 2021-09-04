@@ -27,25 +27,14 @@
     <header class="fondoHeader container-fluid">
       <!---la idea es que contenga el icono, y un menu desplegable-->
 
-      <div class="topnav header_menu_hamburguesa">
-        <a href="#home" class="active">Logo</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+        
+
+      <div class="row header_menu_inline">
+
+        <a href="index.html">
+          <img class="rounded-circle header__logo"  src="imagenes/caja-de-regalo.png"  alt="Logo de la pagina">
         </a>
-      </div>
-               
-      <a href="index.html">
-        <img class="rounded-circle header__logo"  src="imagenes/caja-de-regalo.png"  alt="Logo de la pagina">
-      </a>
-      <div class="row">
-        <div class="offset-md-1 header_menu_inline">
+        <div class="offset-md-1 ">
           <ul class="nav nav-pills">
             <li class="nav-item">
               <a class="header__links" aria-current="page" href="loMasDeseado.html">Lo mas deseado</a>
@@ -70,7 +59,7 @@
       </div>
     </header>
 
-    <h1 class="titulo ">Regalá y recibí exactamente lo que queres!</h1>
+    <h1 class="titulo container-fluid">Regalá y recibí exactamente lo que queres!</h1>
     <!--Login-->
 
     <section class="formulario ">
@@ -109,7 +98,7 @@
 
 
     <!--Carrusel de fotos-->
-    <section class="carousel">
+    <section class="carousel container-fluid">
       <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-indicators">
@@ -141,7 +130,7 @@
     </section>
 
     <!--Valoracion de usuarios-->
-    <section class="opiniones ">
+    <section class="opiniones container-fluid ">
       <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -201,6 +190,7 @@
       </nav>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/hamburguesa.js"></script>
   </body>
 
 
