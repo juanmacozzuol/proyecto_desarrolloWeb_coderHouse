@@ -7,50 +7,45 @@
   <title>Sobre Nosotros</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="mycss/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body class="colorFondo">
     <header class="fondoHeader container-fluid">
       <!---la idea es que contenga el icono, y un menu desplegable-->
-               
+
       <a href="index.html">
         <img class="rounded-circle header__logo"  src="imagenes/caja-de-regalo.png"  alt="Logo de la pagina">
       </a>
-      <div class="row">
-        <div class="offset-md-1">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="header__links" aria-current="page" href="loMasDeseado.html">Lo mas deseado</a>
-            </li>
-            <li class="nav-item dropdown links">
-              <a class="header__links dropdown-toggle " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mi Wishlist</a>
-              <ul class="dropdown-menu fondomenu">
-                <li><a class="dropdown-item" href="./perfil.html">Perfil</a></li>
-                <li><a class="dropdown-item" href="#">Agregar Wish</a></li>
-                <li><a class="dropdown-item" href="#">Eliminar Wish</a></li>
-              </ul>
-            </li>
-            <li class="nav-item links">
-              <a class="header__links header__links--actual"  href="sobreNosotros.html">Sobre Nosotros</a>
-            </li>
-            <li class="nav-item links">
-              <a class="header__links" href="contacto.html" target="_blank">Contacto</a>
-            </li>
+      <h1 class="nombre"> <b> Tu Wishlist</b></h1>
+      <div class="row ">
 
-          </ul>
-        </div>  
+
+  
+        <div class="topnav" id="myTopnav">
+
+          <a href="./perfil.html" class=" offset-md-5">Perfil</a>
+          <a href="./loMasDeseado.html" >Lo Mas Deseado</a>
+          <a href="sobreNosotros.html" class="active" >Sobre Nosotros</a>
+          <a href="contacto.html"  >Contacto</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+
+        </div>
+
       </div>
     </header>
     <section>
       <h2 class="sobreNosotros__titulos">Sobre Nosotros</h2>
       <p class="parrafo">
-        ¿No te pasa que queres regalarle algo a alguien, pero no sabes qué?
-        ¿No estás cansado de los regalos genéricos por compromiso?
-        Tu Wishlist nace de la premisa de poder regalar y recibir lo que uno quiere. Pudiendo hacerlo tambien cooperativamente con gente que conozcas o no.
+                Tu Wishlist nace de la premisa de poder regalar y recibir lo que uno quiere. Pudiendo hacerlo tambien cooperativamente con gente que conozcas o no.
       </p>
       <h2 class="sobreNosotros__titulos">La Idea</h2>
-      <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore saepe obcaecati ea at. Hic, rerum. Distinctio consequatur, tenetur dicta aspernatur repudiandae ab similique voluptate suscipit explicabo maxime molestias, dolorem modi.</p>
-      <h2 class="sobreNosotros__titulos">Los Creadores</h2>
-      <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae odio, fuga iure dignissimos provident odit est voluptate culpa quam asperiores aut iusto facere numquam magnam incidunt ratione aperiam ipsum. Accusamus.</p>
+      <p class="parrafo">¿No te pasa que queres regalarle algo a alguien, pero no sabes qué? ¿No estás cansado de los regalos genéricos por compromiso? Tu Wishlist plantea una nueva forma de regalar, pudiendo elegir entre varias opciones que sabes que la otra persona quiere y pudiendolo hacerlo en conjunto.</p>
+      <h2 class="sobreNosotros__titulos">El Creador</h2>
+      <p class="parrafo">Juan Manuel Fernandez Cozzuol, estudiante de desarrollo web. Tiene problemas a la hora de saber que regalar.</p>
       <img src="imagenes/Juanma.png" class="sobreNosotros__imagen"  alt="Foto del creador">
     </section>
 
@@ -58,9 +53,10 @@
     <footer class="colorFoot container-fluid">
       <nav>
 
-        <a  href="https://api.whatsapp.com/send?phone=+34662681XXX"> <img class="whatsapp" height= 30px width= 50px src="imagenes/WhatsApp-logo.png" alt=""></a>
+        <a  href="https://api.whatsapp.com/send?phone=+34662681XXX"> <img class="whatsapp" height= 30px width= 50px src="imagenes/WhatsApp-logo.png" alt="Foto del creador de la pagina"></a>
       </nav>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/menu.js"></script>
   </body>
 </html>

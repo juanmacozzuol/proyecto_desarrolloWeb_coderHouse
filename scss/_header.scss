@@ -12,42 +12,63 @@
     background-image: linear-gradient(to left,#FF5F6D,#FFC371);
 }
 
-.header__links
-{
-    text-decoration: none;
-    color:black;
-    margin-left: 5px;
-    border-radius: 1px;
-
-   display: block;
-   padding: 5px;
-}
-
-
-.header__links:hover
-{
-    text-decoration: none;
-    color:#FFC371;
-    margin-left: 5px;
-    border-radius: 10px;
-    background-color: #30475E;
-   display: block;
-   padding:1px;
-}
-
-.header__links--actual
-{
-    text-decoration: none;
-    color:#FFC371;
-    margin-left: 5px;
-    border-radius: 10px;
-    background-color: #30475E;
-   display: block;
-   padding:1px
-}
-
 .fondomenu{
 
     background-color: #FFC371;
 }
 
+.nombre{
+ display: inline;
+   
+    color:#30475E;
+    font-family: 'Josefin Sans';
+    animation-duration:3s;
+    animation-name:aparicion;
+}
+
+@keyframes aparicion {
+    0%{
+        opacity:0;
+    }
+    100%{
+
+        opacity:1;
+    }
+    
+}
+
+
+.topnav {
+    background-image: linear-gradient(to left,#FF5F6D,#FFC371);
+    overflow: hidden;
+  }
+  
+ 
+  .topnav a {
+    float: left;
+    display: block;
+    color: #30475E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+ 
+  .topnav a:hover {
+    background-color:#30475E ;
+    color: #FFC371;
+    border-radius: 10px;
+  }
+  
+
+  .topnav a.active {
+    background-color: #30475E;
+    color: #FFC371;
+    border-radius: 10px;
+  }
+  
+
+  .topnav .icon {
+    display: none;
+  }

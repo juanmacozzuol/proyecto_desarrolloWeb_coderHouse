@@ -24,44 +24,62 @@
   grid-area: header;
   background-image: linear-gradient(to left, #FF5F6D, #FFC371); }
 
-.header__links {
-  text-decoration: none;
-  color: black;
-  margin-left: 5px;
-  border-radius: 1px;
-  display: block;
-  padding: 5px; }
-
-.header__links:hover {
-  text-decoration: none;
-  color: #FFC371;
-  margin-left: 5px;
-  border-radius: 10px;
-  background-color: #30475E;
-  display: block;
-  padding: 1px; }
-
-.header__links--actual {
-  text-decoration: none;
-  color: #FFC371;
-  margin-left: 5px;
-  border-radius: 10px;
-  background-color: #30475E;
-  display: block;
-  padding: 1px; }
-
 .fondomenu {
   background-color: #FFC371; }
+
+.nombre {
+  display: inline;
+  color: #30475E;
+  font-family: 'Josefin Sans';
+  animation-duration: 3s;
+  animation-name: aparicion; }
+
+@keyframes aparicion {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.topnav {
+  background-image: linear-gradient(to left, #FF5F6D, #FFC371);
+  overflow: hidden; }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #30475E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px; }
+
+.topnav a:hover {
+  background-color: #30475E;
+  color: #FFC371;
+  border-radius: 10px; }
+
+.topnav a.active {
+  background-color: #30475E;
+  color: #FFC371;
+  border-radius: 10px; }
+
+.topnav .icon {
+  display: none; }
 
 .sobreNosotros__titulos {
   text-align: left;
   border-bottom: 3px solid black;
-  font-style: oblique; }
+  font-style: oblique;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
 
 .sobreNosotros__imagen {
   height: 200px;
   width: 150px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  padding: 10px; }
 
 /*@import "./query";*/
 * {
@@ -76,7 +94,9 @@
 .parrafo {
   font-size: 25px;
   font-style: italic;
-  color: black; }
+  color: black;
+  padding: 10px;
+  margin: 10px; }
 
 /*texto sobre nosotros*/
 /*H1 del index*/
@@ -111,7 +131,7 @@
 .grilla {
   display: grid;
   grid-template-areas: "header header header" "titulo titulo titulo" "login fotos vacio" "opiniones opiniones opiniones" "footer footer footer";
-  grid-template-rows: 100px 200px 400px auto 75px;
+  grid-template-rows: 150px 200px 500px auto 75px;
   grid-template-columns: 30% 60% auto;
   row-gap: 20px;
   column-gap: 10px; }
@@ -137,7 +157,42 @@
   padding: 10px; }
 
 .espacio {
-  padding: 5px; }
+  padding: 5px;
+  margin: 5px; }
+
+.items {
+  background-color: #30475E;
+  color: gold;
+  margin: 10px;
+  padding: 10px; }
+
+@media (max-width: 961px) {
+  .grilla {
+    display: grid;
+    grid-template-areas: "header  header" "titulo titulo" "login login"  "fotos fotos " "opiniones opiniones" "footer footer";
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 10px; }
+  .titulo {
+    grid-area: titulo;
+    font-size: 50px;
+    font-family: 'MonteCarlo', cursive;
+    color: #30475E;
+    text-align: center; }
+  .topnav a {
+    display: none; }
+  .topnav a.icon {
+    display: block; }
+  .topnav.responsive {
+    position: relative; }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; } }
 
 @media (max-width: 576px) {
   .grilla {
@@ -152,19 +207,10 @@
     font-family: 'MonteCarlo', cursive;
     color: #30475E;
     text-align: center; }
-  .header_menu_inline {
-    display: none; } }
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 576px) {
-  .topnav a:not(:first-child) {
+  .topnav a {
     display: none; }
   .topnav a.icon {
-    float: right;
-    display: block; } }
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 576px) {
+    display: block; }
   .topnav.responsive {
     position: relative; }
   .topnav.responsive a.icon {
