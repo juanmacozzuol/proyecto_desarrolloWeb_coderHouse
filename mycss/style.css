@@ -17,7 +17,9 @@
 
 .header__logo {
   height: 70px;
-  width: 70px; }
+  width: 70px;
+  margin-top: 5px;
+  margin-left: 5px; }
 
 /*clase para el header, de momento solo define el color de fondo*/
 .fondoHeader {

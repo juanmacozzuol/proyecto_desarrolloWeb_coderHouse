@@ -2,6 +2,8 @@
 {
     height:70px;
     width:70px;
+    margin-top:5px;
+    margin-left:5px;
     
 }
 /*clase para el header, de momento solo define el color de fondo*/
@@ -24,6 +26,7 @@
     font-family: 'Josefin Sans';
     animation-duration:3s;
     animation-name:aparicion;
+
 }
 
 @keyframes aparicion {
