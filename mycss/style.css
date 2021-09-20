@@ -15,6 +15,12 @@
   transform: scale(2, 2);
   transition: all 1s; }
 
+.copyright {
+  color: #F69E7B;
+  size: 16px;
+  margin-left: 35%;
+  margin-top: 40px; }
+
 .header__logo {
   height: 70px;
   width: 70px;
@@ -133,7 +139,7 @@
 .grilla {
   display: grid;
   grid-template-areas: "header header header" "titulo titulo titulo" "login fotos vacio" "opiniones opiniones opiniones" "footer footer footer";
-  grid-template-rows: 150px 200px 500px auto 75px;
+  grid-template-rows: 150px 200px 500px auto 100px;
   grid-template-columns: 30% 60% auto;
   row-gap: 20px;
   column-gap: 10px; }
@@ -167,6 +173,12 @@
   color: gold;
   margin: 10px;
   padding: 10px; }
+
+.copyright {
+  color: #F69E7B;
+  size: 16px;
+  margin-left: 35%;
+  margin-top: 40px; }
 
 @media (max-width: 961px) {
   .grilla {
