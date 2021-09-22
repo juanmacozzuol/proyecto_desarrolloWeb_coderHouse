@@ -37,10 +37,12 @@
 
 .nombre {
   display: inline;
+  text-decoration: none;
   color: #30475E;
   font-family: 'Josefin Sans';
   animation-duration: 3s;
-  animation-name: aparicion; }
+  animation-name: aparicion;
+  font-size: 45px; }
 
 @keyframes aparicion {
   0% {
@@ -173,12 +175,6 @@
   color: gold;
   margin: 10px;
   padding: 10px; }
-
-.copyright {
-  color: #F69E7B;
-  size: 16px;
-  margin-left: 35%;
-  margin-top: 40px; }
 
 @media (max-width: 961px) {
   .grilla {
